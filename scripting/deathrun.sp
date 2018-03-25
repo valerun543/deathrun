@@ -62,4 +62,13 @@ public void onPluginStart()
 	HookEvent("player_disconnect", DR_Action_Disconnect, EventHookMode_Pre);
 	HookEvent("player_team", DR_BlockTeamMessage, EventHookMode_Pre);
 	HookEvent("player_jump", DR_PlayerJump);
+
+    RegConsoleCmd("jointeam", DR_Player_JoinTeam);
+	RegConsoleCmd("spectate", DR_Player_Spectate);
+	RegConsoleCmd("kill", DR_BlockSuicide);
+    RegConsoleCmd("killserver", DR_BlockSuicide);
+	RegConsoleCmd("joinclass", DR_BlockSuicide);
+	RegConsoleCmd("explode", DR_BlockSuicide);
+	RegConsoleCmd("say", DR_Say_Commands);
+	RegConsoleCmd("say_team", DR_Say_Commands);
 }
