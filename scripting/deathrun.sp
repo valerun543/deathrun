@@ -54,4 +54,12 @@ public void onPluginStart()
 
    dr_active = CreateConar("dr_enable", "1", "Enable/Disable Deathrun Manager?");
    HookEvent("round_start", Event_RoundStart);
+
+   	HookEventEx("player_death", DR_Action_Death, EventHookMode_Pre);
+	HookEventEx("round_end", DR_Action_RoundEnd, EventHookMode);
+	HookEventEx("round_start", DR_Action_RoundStart, EventHookMode);
+	HookEvent("player_spawn", DR_Action_Spawn, EventHookMode);
+	HookEvent("player_disconnect", DR_Action_Disconnect, EventHookMode_Pre);
+	HookEvent("player_team", DR_BlockTeamMessage, EventHookMode_Pre);
+	HookEvent("player_jump", DR_PlayerJump);
 }
