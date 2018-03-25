@@ -36,7 +36,7 @@ Handle dr_forceroundend = INVALID_HANDLE;
 Handle dr_spectate = INVALID_HANDLE;
 Handle dr_autoforce = INVALID_HANDLE;
 
-#define DMG_NERVEGA   "1.0 DEV"
+#define DR_VERSION   "1.0 DEV"
 
 #pragma newdecls required
 
