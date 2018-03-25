@@ -50,7 +50,8 @@ public Plugin myinfo =
 
 public void onPluginStart()
 {
+    LoadTranslations("deathrun.phrases");
+
    dr_active = CreateConar("dr_enable", "1", "Enable/Disable Deathrun Manager?");
    HookEvent("round_start", Event_RoundStart);
 }
-public void 
